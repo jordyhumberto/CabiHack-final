@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Somos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <script src="header.js"></script>
+    <section class="main">   
+        <div class="primera-fila">
+            <div class="contenedor">
+                <div class="aprendizaje">
+                    <p><span style="color:#009D7E;">APRENDI</span><span style="color:#CB3A42;">ZAJE</span></p>
+                    <p> COLABORATIVO <span style="color:#CB3A42;">(</span><span style="color:#F0AB57;">EN</span><span style="color:#CB3A42;">)</span></p>
+                    <p><span style="color:#CB3A42;">{</span><b>TECNO</b></p>
+                    <p><b>LOGIA</b><span style="color:#CB3A42;">}</span></p>
+                    <P class="texto-cambia"></P>  
+                </div>
+            </div>
+            <div class="caja-cohete">
+                 <img class="cohete1" src="img/ANIM1-B.png" alt="">
+                
+            </div>
+        </div>
+
+        <div class="caja-somos">
+            <a href="#seccion1" id="link1"><img class="somos" src="img/SOMOSBT1.png" alt=""></a> 
+        </div>
+
+        <div class="segunda-fila" id="seccion1">
+            <img class="cohete2" src="img/ANIM2-A.PNG" alt="">
+            <img src="img/SOMOS.PNG" alt="">
+            <div class="caja-segunda-p">
+                <p>Un espacio de</p>
+                <p>aprendizaje colaborativo</p>
+                <p>en tegnología...</p>
+            </div>
+        </div>
+
+        <div class="bt-caja">
+            <a href="#seccion2" id="link2"><img class="bt" src="img/BT1.png" alt=""></a>
+        </div>
+
+        <div class="tercera-fila" id="seccion2">
+            <div class="contenedor2">
+                <div class="caja-texto">
+                    <p>que usa cabinas de internet como puntos de encuentro</p>
+                </div>
+            </div>
+            <div class="caja-cabina"><img class="cabina" src="img/ANIM3-1.png" alt=""></div>
+        </div>
+
+        <div class="bt-caja">
+            <a href="#seccion3" id="link3"><img class="bt" src="img/BT1.png" alt=""></a>
+        </div>
+
+        <div class="cuarta-fila" id="seccion3">
+            <div class="caja-cabihack">
+                <p class="cabihack"><span style="color:#CB3A42;">{</span>CABIHACK<span style="color:#CB3A42;">}</span></p>
+            </div>
+            <div class="columnas">
+                <div class="columna1">
+                    <div class="caja-columna">
+                        <div class="caja-icono"><img class="icono" src="img/DO1.png" alt=""></div>
+                        <div class="caja">
+                            <p class="titulo">Ahorro tiempo</p>
+                            <p class="contenido">
+                                Habilitamos espacios de aprendizaje cerca de ti, no más largas distancias.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="caja-columna">
+                        <div class="caja-icono"><img class="icono" src="img/DO2.png" alt=""></div>
+                        <div class="caja">
+                            <p class="titulo">Desarrolla código</p>
+                            <p class="contenido">
+                                Que te ayuda a resolver problemas, procesar grandes cantidades de información, desarrollar arte, conquistar el mundo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columna2">
+                    <div class="caja-columna">
+                        <div class="caja-icono"><img class="icono" src="img/DO3.png" alt=""></div>
+                        <div class="caja">
+                            <p class="titulo">Aprende en equipo</p>
+                            <p class="contenido">
+                                Pregunta, responde, retroalimenta y brinda soluciones e ideas locas. Comparte con otros estudiantes de la comunidad.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="caja-columna">
+                        <div class="caja-icono"><img class="icono" src="img/DO4.png" alt=""></div>
+                        <div class="caja">
+                            <p class="titulo">Instructores expertos</p>
+                            <p class="contenido">
+                                Desarrolladores con experiencia, aprende sin pautas, a tu ritmo, absuelve tus ideas, consulta con los expertos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="footer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu').click(function () {
+                $('.li-desplegable').toggleClass('active');
+                $('.iniciar').toggleClass('active1');
+                $('.header').toggleClass('active2');
+            });
+        });
+    </script>
+    <script>
+    var controladorDeLogo = false;
+        window.onscroll = function() {consideraScroll()};
+        function consideraScroll() {
+            if(window.pageYOffset>80){
+                if(controladorDeLogo==true){
+                }
+                else if(controladorDeLogo==false){
+                    document.getElementsByClassName("logo")[0].classList.remove("contrae");
+                    document.getElementsByClassName("logo")[0].classList.add("expande");
+                    controladorDeLogo=true;
+                }
+            }
+            else if(window.pageYOffset<=80){
+                if(controladorDeLogo==true){
+                    document.getElementsByClassName("logo")[0].classList.remove("expande");
+                    document.getElementsByClassName("logo")[0].classList.add("contrae");
+                    controladorDeLogo=false;
+                }
+                else if(controladorDeLogo==false){
+                }
+            }
+        }
+        </script>
+</body>
+</html>

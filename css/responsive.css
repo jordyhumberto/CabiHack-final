@@ -1,0 +1,311 @@
+@media screen and ( max-width: 426px){
+    /*-----------------header-------------------*/
+    .primera-fila{
+        height: 250px;
+    }
+    .segunda-fila{
+        height: 250px;
+    }
+    .tercera-fila{
+        height: 300px;
+    }
+    .cuarta-fila{
+        height: 600px;
+    }
+    .caja-columna{
+        margin:0;
+    }
+    .cabina{
+        width: 250px;
+        height: 250px;
+    }
+    .contenido{
+        font-size: .7rem;
+    }
+    .icono{
+        width: 50px;
+        height: 50px;
+    }
+
+    .titulo{
+        font-size: 1.2rem;
+    }
+    header{
+        flex-wrap: wrap;
+    }
+    .caja-menu{
+        margin-top: 5px;
+        margin-left: 10px;
+        display: block;
+        font-size: 25px;
+    }
+    .desplegable{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        position: relative;
+    }
+    .desplegable:before{
+        content: "";
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: absolute;
+        opacity: .5;
+    }
+    .desplegable nav{
+        position: relative;
+    }
+    .header nav{
+        display: none;
+    }
+    .li-container{
+        flex-direction: column;
+    }
+    .header{
+        justify-content: space-between;
+        position: relative;
+        height: 35px;
+    }
+    .header:before{
+        content: "";
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: absolute;
+    }
+    .header div,img,a{
+        position: relative;
+    }
+    .logo{
+        widows: 200px;
+        height: 80px;
+    }
+    .iniciar{
+        padding-left: 2%;
+        padding-right: 2%;
+        width: 35px;
+        height: 35px;
+        font-size: .6rem;
+    }
+    .iniciar:before{
+        content: "Entrar";
+    }
+    .li-desplegable{
+        display: none;
+    }
+    .active{
+        display: flex;
+    }
+    .active1{
+        visibility: hidden;
+    }
+    .active2{
+        height: 80px;
+    }
+    .li-desplegable li{
+        list-style: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .li-desplegable li a{
+        text-decoration: none;
+    }
+    .boton{
+        background: #E02C28;
+        padding: 5px;
+    }
+    .segunda-fila p{
+        font-size: 1rem;
+    }
+    .somos{
+        width:90px;
+        height: 70px;
+    }
+    .bt{
+        width: 70px;
+        height: 70px;
+    }
+    /*-----------------filas----------------------*/
+    .texto-cambia:before{
+        content:"Usamos cabinas de internet como puntos de encuentro y aprendizaje para crear y compartir código.";
+    }
+    .caja-cohete{
+        display: none;
+    }
+    .tercera-fila{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tercera-fila .contenedor2,.caja-cabina{
+        width: 100%;
+    }
+    .caja-texto{
+        width: 70%;
+    }
+    .caja-cabina{
+        margin-top: 20%;
+    }
+    .caja-columna{
+        margin-bottom: 5%;
+    }
+    .primera-fila, .segundada-fila, .tercera-fila, .caja-somos, .bt-caja{
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+    .aprendizaje{
+        position: relative;
+    }
+    .aprendizaje:before{
+        content: "";
+        width: 100%;
+        height: 150%;
+        background: url(../img/ANIM1-B.png);
+        background-size: 100% 100%;
+        position: absolute;
+        opacity: 0.4;
+    }
+    .aprendizaje p{
+        position: relative;
+    }
+    /*---------------tamaño de textos--------------------*/
+    /*-----------------texto primera fila---------------*/
+    .aprendizaje p{
+        text-align: center;
+    }
+    .aprendizaje p:nth-child(1){
+        font-size: 1rem;
+    }
+    .aprendizaje p:nth-child(2){
+        font-size: 1.2rem;
+    }
+    .aprendizaje p:nth-child(3){
+        font-size: 3.5rem;
+    }
+    .aprendizaje p:nth-child(4){
+        font-size: 3.5rem;
+    }
+    .aprendizaje p:nth-child(5){
+        width: 80%;
+        margin: auto;
+        font-size: 0.8rem;
+    }
+    /*----------------------------------------------*/
+    .caja-texto  p{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .cabihack{
+        font-size: 1rem;
+    }
+    .columnas{
+        flex-direction: column;
+    }
+    .columna1,.columna2{
+        width: 100%;
+    }
+    .caja-icono{
+        width: 80px;
+        height: 80px;
+    }
+    .icono{
+        width: 60px;
+        height: 60px;
+    }
+    /*--------------taller-------------*/
+    .caja-banner{
+        display: none;
+    }
+    
+    .banner{
+        justify-content: center;
+        height: 200px;
+    }
+    .caja-talleres{
+        justify-content: center;
+    }
+    .caja-textos{
+        margin: 0;
+    }
+    .caja-textos p{
+        text-align: center;
+        letter-spacing: 0;
+    }
+    .caja-talleres p:nth-child(1){
+        font-size: 3rem;
+    }
+    .caja-talleres p:nth-child(2){
+        font-size: .8rem;
+    }
+    .caja-talleres p:nth-child(3){
+        font-size: .8rem;
+    }
+    .caja-talleres p:nth-child(4){
+        font-size: .8rem;
+    }
+    .taller{
+        width: 60%;
+    }
+    /*----------------------desarrolladores------------------------*/
+    .caja-desarrollador{
+        justify-content: center;
+    }
+    .caja-textoss{
+        margin: 0;
+    }
+    .caja-textoss p{
+        text-align: center;
+        letter-spacing: 0;
+    }
+    .caja-desarrollador p:nth-child(1){
+        font-size: 3rem;
+    }
+    .caja-desarrollador p:nth-child(2){
+        font-size: 3rem;
+    }
+    .caja-desarrollador p:nth-child(3){
+        font-size: .8rem;
+    }
+    .caja-desarrollador p:nth-child(4){
+        font-size: .8rem;
+    }
+    .desarrollador{
+        width: 60%;
+    }
+    /*----------------------------footer------------------------------*/
+    .cuarta-fila{
+        margin-bottom: 0;
+    }
+    .caja-iconos{
+        font-size: 1.5rem;
+        margin: 10px 0px;
+    }
+    .conectate,.secciones{
+        font-size: 1.5rem;
+    }
+    .caja-footer2{
+        flex-wrap: wrap;
+    }
+    .caja-seguir{
+        font-size: 1rem;
+    }
+    .caja-footer2 p{
+        font-size: 1rem;
+    }
+    .caja-secciones{
+        font-size: 1rem;
+    }
+    /*--------------------------bannersssss------------------------------------*/
+    .banner-pantalla{
+        display: none;
+    }
+    .banner-celular{
+        display: block;
+    }
+    .banner-celular img{
+        width: 100%;
+    }
+}

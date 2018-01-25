@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sedes</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/iconos.css">
+    <link rel="stylesheet" href="css/social.css">
+
+    <link rel="stylesheet" href="css/sedes.css">
+    <link rel="stylesheet" href="css/sedes2.css">
+    <link rel="stylesheet" href="css/footer.css">
+  </head>
+  <body>
+        <script src="header.js"></script>
+    <section>
+        <div class="banner-pantalla"><img src="img/sedes_pc.png" alt=""></div>
+        <div class="banner-celular"><img src="img/sedes_movil.png" alt=""></div>
+    </section>
+    <main class="sedes">
+      <section class="controles" id="controles">
+        <button>ILista</button>
+        <button>IMapa</button>
+      </section>
+      <section class="contenido" id="contenido">
+        <ul class="contenido__lista" id="contenido__lista">
+          <li class="tituloLista" id="tituloLista"><span>{</span>
+            <p>Direcciones</p><span>}</span>
+          </li>
+          <li>Carabayllo</li>
+          <li>Los Olivos</li>
+          <li>Santa Rosa</li>
+          <li>Puente Piedra</li>
+          <li>Ventanilla</li>
+        </ul>
+        <div class="contenido__mapa" id="contenido__mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.3958164819574!2d-77.07901368563688!3d-11.947073991533737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDU2JzQ5LjUiUyA3N8KwMDQnMzYuNiJX!5e0!3m2!1ses-419!2spe!4v1515358880805" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen></iframe>
+        </div>
+        <div class="contenido__detalle" id="contenido__detalle">
+          <div class="contenido__detalle__header" id="contenido__detalle__header">
+            <span><</span>
+            <h3 class="contenido__detalle__header__titulo">
+              <div class="detalle__header__titulo__iconoMapa"><img src="img/iconLugar.png" alt=""></div>
+              <div class="detalle__header__titulo__escrito"><p><span><</span>Puente Piedra<span>></span></p>
+                <p>Jr. Puente Piedra</p>
+              </div>
+            </h3>
+            <span>></span>
+          </div>
+          <div class="contenido__detalle__foto" id="contenido__detalle__foto"><img src="img/lugar.png" alt=""></div>
+        </div>
+      </section>
+    </main>
+    <script src="footer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu').click(function () {
+                $('.li-desplegable').toggleClass('active');
+                $('.iniciar').toggleClass('active1');
+                $('.header').toggleClass('active2');
+            });
+        });
+    </script>
+    <script src="js/sedes.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrk18Z_pPhHgq33sppxwS22GKY2p5gHSk&amp;callback=initMap"></script>
+    <script src="js/mapa.js"></script>
+    <script>
+        var controladorDeLogo = false;
+            window.onscroll = function() {consideraScroll()};
+            function consideraScroll() {
+                if(window.pageYOffset>80){
+                    if(controladorDeLogo==true){
+                    }
+                    else if(controladorDeLogo==false){
+                        document.getElementsByClassName("logo")[0].classList.remove("contrae");
+                        document.getElementsByClassName("logo")[0].classList.add("expande");
+                        controladorDeLogo=true;
+                    }
+                }
+                else if(window.pageYOffset<=80){
+                    if(controladorDeLogo==true){
+                        document.getElementsByClassName("logo")[0].classList.remove("expande");
+                        document.getElementsByClassName("logo")[0].classList.add("contrae");
+                        controladorDeLogo=false;
+                    }
+                    else if(controladorDeLogo==false){
+                    }
+                }
+            }
+    </script>
+    <script>
+      
+    </script>
+  </body>
+</html>

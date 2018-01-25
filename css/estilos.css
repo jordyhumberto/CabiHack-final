@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+body{
+    background: #1C1C1B;
+    color:white;
+}
+/*flex-direccion*/
+/*flex-item:nth-child(n)*/
+/*align-items: center;*/
+/*
+@media only screen and (max-width: 426px){
+   header{
+       display: none;
+   }
+}
+*/
+/*----------------------index--------------------*/
+
+/*------------------ header -------------------*/
+.caja-menu{
+    display: none;
+}
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 1;
+}
+.logo{
+    position: relative;
+}
+.header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 1;
+}
+
+.header nav{
+    flex-grow: 1;
+}
+
+.li-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: black;
+    height: 50px;
+}
+.li-container li{
+    list-style: none;
+}
+.li-container li a{
+    text-decoration: none;
+}
+.iniciar{
+    display: flex;
+    background-color: #E02C28;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;    
+}
+.iniciar:before{
+    content: "Iniciar Sesion";
+}
+
+.li-desplegable{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+/*---------------- main ---------------*/
+section{
+    position: relative;
+    top:80px;
+}
+/*-----------------primera fila----------------*/
+.primera-fila{
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+}
+.primera-fila div{
+    flex-basis: auto;
+    flex-grow: 1;
+}
+.cohete1{
+    position: relative;
+    width: 50%;
+    height: 90%;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aprendizaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.caja-cohete{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aprendizaje P{
+    letter-spacing: 0.2em
+}
+.texto-cambia:before{
+    content:"Aprende,crea y comparte código.";
+}
+.aprendizaje p:nth-child(1){
+    font-size: 2rem;
+}
+.aprendizaje p:nth-child(2){
+    font-size: 2rem;
+}
+.aprendizaje p:nth-child(3){
+    font-size: 6rem;
+}
+.aprendizaje p:nth-child(4){
+    font-size: 6rem;
+}
+.aprendizaje p:nth-child(5){
+    font-size: 1.5rem;
+}
+/*-------------------link somos--------------------------------*/
+.caja-somos{
+    display: flex;
+    justify-content: center;
+}
+.somos{
+    width:150px;
+    height: 110px;
+}
+/*----------------segunda fila--------------------*/
+.segunda-fila{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 580px;
+}
+.segunda-fila img:nth-child(1){
+    width: 5%;
+}
+.segunda-fila img:nth-child(2){
+    width: 40%;
+}
+.segunda-fila p{
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.caja-segunda-p{
+    margin-top:20px;
+}
+/*-----------------------bt1----------------------*/
+.bt-caja{
+    display: flex;
+    justify-content: center;
+}
+.bt{
+    width: 110px;
+    height: 110px;
+}
+/*--------------------tercera fila----------------*/
+.tercera-fila{
+    display: flex;
+    height: 580px;
+}
+.contenedor2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.caja-texto{
+    width: 79%;
+    display: flex;
+    align-items: center;
+}
+.caja-cabina{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cabina{
+    width: 500px;
+    height: 500px;
+}
+.caja-texto  p{
+    font-size: 3rem;
+}
+/*-----------------cuarta fila-------------*/
+.cuarta-fila{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.caja-cabihack{
+    display: flex;
+    justify-content: center;
+}
+.cabihack{
+    font-size: 2rem;
+    margin: 30px 0px;
+}
+.columnas{
+    display: flex;
+    align-items: center;
+}
+.columna1{
+    width: 50%;
+}
+.columna2{
+    width: 50%;
+}
+.caja-columna{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    margin:50px 0px;
+}
+.caja{
+    width: 70%;
+    height: 100%;
+}
+.caja-icono{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icono{
+    width: 100px;
+    height: 100px;
+}
+.titulo{
+    color:#CB3A42;
+    margin-bottom: 1%;
+    font-size: 2.5rem;
+}
+.contenido{
+    font-size: 1.2rem;
+}
+/*-----------------------fin index--------------------------*/
+
+/*-----------------------talleres----------------------*/
+
+/*------------------segunda fila-------------------*/
+.caja-taller{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.taller{
+    background-color: white;
+    margin: 20px 0px 20px 0px;
+    width:30%;
+    height: 200px;
+    border: grey 2px solid;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px grey;
+}
+/*--------------------desarrolladores banner--------------------------*/
+
+.desarrollador{
+    background-color: white;
+    margin: 20px 0px 20px 0px;
+    width:30%;
+    height: 200px;
+    border: grey 2px solid;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px grey;
+}
+.caja-desarrolladores{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+/*---------------------footer-------------------------*/
+footer{
+    background-color: #474747;
+    font-size: 1.5rem;
+    padding: 20px;
+    top:80px;
+    position: relative;
+}
+.caja-footer1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.caja-footer1-1{
+    flex-grow: 1;
+    padding: 10px;
+}
+.caja-secciones{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.caja-secciones div{
+    display: flex;
+    margin-top: 10px;
+}
+.caja-secciones div p{
+    flex-grow: 1;
+}
+.caja-footer1-2{
+    flex-grow: 1;
+    padding: 10px;
+}
+.caja-iconos{
+    display: flex;
+    justify-content: space-between;
+    font-size: 4rem;
+    margin: 20px 0px;
+}
+.caja-seguir{
+    display: flex;
+}
+.caja-seguir p{
+    margin-right: 20px;
+    background: grey;
+    padding: 5px;
+}
+.caja-footer2{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+.conectate{
+    font-size: 2rem;
+}
+.secciones{
+    font-size: 2rem;
+}
+
+
+/*----------------------------bannerssss-------------------------*/
+.banner-pantalla img{
+    width: 100%;
+}
+.banner-celular{
+    display: none;
+}
+/*---------------------------logo--movil-------------------------------*/
+.expande{
+    animation-name: expande;
+    animation-fill-mode: forwards;/***/
+    animation-duration: .7s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+.contrae{
+    animation-name: contrae;
+    animation-fill-mode: forwards;/***/
+    animation-duration: .7s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+@keyframes expande{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: -45px;
+    }
+}
+@keyframes contrae{
+    0%{
+        top: -45px;
+    }
+    100%{
+        top: 0;
+    }
+}
