@@ -33,6 +33,8 @@ header{
 }
 .logo{
     position: relative;
+    width: 185px;
+    height: 100px;
 }
 .header{
     display: flex;
@@ -364,7 +366,9 @@ footer{
 
 /*----------------------------bannerssss-------------------------*/
 .banner-pantalla img{
-    width: 100%;
+    width: 85%;
+    display: block;
+    margin: auto;
 }
 .banner-celular{
     display: none;
