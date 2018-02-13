@@ -10,9 +10,43 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
+    <!--
     <script src="header.js"></script>
+    -->
+    <header>
+        <div class='header'> 
+            <div class='caja-menu'>
+                <i class='fa fa-bars menu' aria-hidden='true'></i>
+            </div>
+            <a href="#seccion1">
+                <img class='logo' src='img/logo.png' alt=''>
+            </a>
+            <nav> 
+                <ul class='li-container'> 
+                    <li><a href='#slider'>Somos</a></li>
+                    <li><a href='talleres.html'>Talleres</a></li>
+                    <li><a href='desarrolladores.html'>Desarrolladores</a></li>
+                    <li><a href='sedes.html'>Sedes</a></li>
+                    <li><a href='contacto.html'>Contacto</a></li>
+                </ul> 
+            </nav> 
+            <a class='iniciar' href=''></a> 
+        </div>
+        <div class='desplegable'> 
+            <nav> 
+                <ul class='li-desplegable'> 
+                    <li><a href='#slider'>Somos</a></li>
+                    <li><a href='talleres.html'>Talleres</a></li>
+                    <li><a href='desarrolladores.html'>Desarrolladores</a></li>
+                    <li><a href='sedes.html'>Sedes</a></li>
+                    <li><a href='contacto.html'>Contacto</a></li>
+                    <li><a class='boton' href=''>Iniciar Sesión</a></li>
+                </ul> 
+            </nav> 
+        </div>
+    </header>
     <section class="main">   
-        <div class="primera-fila">
+        <div class="primera-fila" id="seccion1">
             <div class="contenedor">
                 <div class="aprendizaje">
                     <p><span style="color:#009D7E;">APRENDI</span><span style="color:#CB3A42;">ZAJE</span></p>
@@ -29,32 +63,35 @@
         </div>
 
         <div class="caja-somos">
-            <a href="#seccion1" id="link1"><img class="somos" src="img/SOMOSBT1.png" alt=""></a> 
+            <a href="#slider" id="link1"><img class="somos" src="img/SOMOSBT1.png" alt=""></a> 
         </div>
 
-        <div class="segunda-fila" id="seccion1">
-            <img class="cohete2" src="img/ANIM2-A.PNG" alt="">
-            <img src="img/SOMOS.PNG" alt="">
-            <div class="caja-segunda-p">
-                <p>Un espacio de</p>
-                <p>aprendizaje colaborativo</p>
-                <p>en tegnología...</p>
-            </div>
+        <div class="slider_prueba" id="slider">
+            <ul>
+                <li>
+                    <div class="segunda-fila" id="seccion1">
+                        <img class="cohete2" src="img/ANIM2-A.PNG" alt="">
+                        <img src="img/SOMOS.PNG" alt="">
+                        <div class="caja-segunda-p">
+                            <p>Un espacio de</p>
+                            <p>aprendizaje colaborativo</p>
+                            <p>en tegnología...</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="tercera-fila" id="seccion2">
+                        <div class="contenedor2">
+                            <div class="caja-texto">
+                                <p>que usa cabinas de internet como puntos de encuentro</p>
+                            </div>
+                        </div>
+                        <div class="caja-cabina"><img class="cabina" src="img/ANIM3-1.png" alt=""></div>
+                    </div>
+                </li>    
+            </ul>
         </div>
-
-        <div class="bt-caja">
-            <a href="#seccion2" id="link2"><img class="bt" src="img/BT1.png" alt=""></a>
-        </div>
-
-        <div class="tercera-fila" id="seccion2">
-            <div class="contenedor2">
-                <div class="caja-texto">
-                    <p>que usa cabinas de internet como puntos de encuentro</p>
-                </div>
-            </div>
-            <div class="caja-cabina"><img class="cabina" src="img/ANIM3-1.png" alt=""></div>
-        </div>
-
+    
         <div class="bt-caja">
             <a href="#seccion3" id="link3"><img class="bt" src="img/BT1.png" alt=""></a>
         </div>
@@ -63,52 +100,74 @@
             <div class="caja-cabihack">
                 <p class="cabihack"><span style="color:#CB3A42;">{</span>CABIHACK<span style="color:#CB3A42;">}</span></p>
             </div>
-            <div class="columnas">
-                <div class="columna1">
-                    <div class="caja-columna">
-                        <div class="caja-icono"><img class="icono" src="img/DO1.png" alt=""></div>
-                        <div class="caja">
-                            <p class="titulo">Ahorro tiempo</p>
-                            <p class="contenido">
-                                Habilitamos espacios de aprendizaje cerca de ti, no más largas distancias.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="caja-columna">
-                        <div class="caja-icono"><img class="icono" src="img/DO2.png" alt=""></div>
-                        <div class="caja">
-                            <p class="titulo">Desarrolla código</p>
-                            <p class="contenido">
-                                Que te ayuda a resolver problemas, procesar grandes cantidades de información, desarrollar arte, conquistar el mundo.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="columna2">
-                    <div class="caja-columna">
-                        <div class="caja-icono"><img class="icono" src="img/DO3.png" alt=""></div>
-                        <div class="caja">
-                            <p class="titulo">Aprende en equipo</p>
-                            <p class="contenido">
-                                Pregunta, responde, retroalimenta y brinda soluciones e ideas locas. Comparte con otros estudiantes de la comunidad.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="caja-columna">
-                        <div class="caja-icono"><img class="icono" src="img/DO4.png" alt=""></div>
-                        <div class="caja">
-                            <p class="titulo">Instructores expertos</p>
-                            <p class="contenido">
-                                Desarrolladores con experiencia, aprende sin pautas, a tu ritmo, absuelve tus ideas, consulta con los expertos.
-                            </p>
-                        </div>
-                    </div>
+        </div>
+
+        <div class="fila_prueba">
+            <img src="img/DO1.png" alt="" class="imagen_prueba">
+            <div>
+                <p class="titulo_prueba">Ahorro tiempo</p>
+                <p class="texto_prueba">Habilitamos espacios de aprendizaje cerca de ti, no más largas distancias.</p>
+            </div>
+            
+            <img src="img/DO2.png" alt="" class="imagen_prueba">
+            <div>
+                <p class="titulo_prueba">Desarrolla código</p>
+                <p class="texto_prueba">Que te ayuda a resolver problemas, procesar grandes cantidades de información, desarrollar arte, conquistar el mundo.</p>
+            </div>
+            
+            <img src="img/DO3.png" alt="" class="imagen_prueba">
+            <div>
+                <p class="titulo_prueba">Aprende en equipo</p>
+                <p class="texto_prueba">Pregunta, responde, retroalimenta y brinda soluciones e ideas locas. Comparte con otros estudiantes de la comunidad.</p>
+            </div>
+            
+            <img src="img/DO4.png" alt="" class="imagen_prueba">
+            <div>
+                <p class="titulo_prueba">Instructores expertos</p>
+                <p class="texto_prueba">Desarrolladores con experiencia, aprende sin pautas, a tu ritmo, absuelve tus ideas, consulta con los expertos.</p>
+            </div>
+            
+        </div>
+    </section>
+    <footer>
+        <div class="footer_prueba_filas">
+            <div class="footer_prueba_primera">
+                <p>About</p>
+                <ul>
+                    <li>Somos</li>
+                    <li>Talleres</li>
+                    <li>Developers</li>
+                    <li>Sedes</li>
+                    <li>Contacto</li>
+                </ul>
+            </div>
+            <div class="footer_prueba_segunda">
+                <p>Suscribete a nuestros eventos</p>
+                <form action="" method="post">
+                    <input  class="footer_email" type="email" name="footer_email" id="footer_email" placeholder="Enter Email Addres">
+                    <input class="footer_boton" type="button" id="footer_boton"value="suscribete">
+                </form>
+            </div>
+            <div class="footer_prueba_tercera">
+                <p>Conectate con nosotros</p>
+                <div class='footer_caja_iconos'>
+                    <i class='fa fa-facebook-square' aria-hidden='true'></i>
+                    <i class='fa fa-twitter-square' aria-hidden='true'></i> 
+                    <i class='fa fa-google-plus-square' aria-hidden='true'></i> 
+                    <i class='fa fa-pinterest-square' aria-hidden='true'></i> 
+                    <i class='fa fa-instagram' aria-hidden='true'></i> 
+                    <i class='fa fa-vimeo-square' aria-hidden='true'></i> 
+                    <i class='fa fa-youtube-play' aria-hidden='true'></i> 
                 </div>
             </div>
         </div>
-    </section>
+        <div class="footer_prueba_pie">
+                <p><i class='fa fa-copyright' aria-hidden='true'></i>CabiHack 2018</p>
+                <p>Terminos de uso</p>
+                <p>Politicas de Privacidad</p>
+        </div>
+    </footer>
 
-    <script src="footer.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script>
         $(document).ready(function () {

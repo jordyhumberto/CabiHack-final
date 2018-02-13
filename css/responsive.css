@@ -1,23 +1,29 @@
 @media screen and ( max-width: 426px){
     /*-----------------header-------------------*/
+    
     .primera-fila{
+        margin-top: 10rem;
         height: 250px;
     }
     .segunda-fila{
         height: 250px;
     }
     .tercera-fila{
-        height: 300px;
+        height: 250px;
     }
     .cuarta-fila{
-        height: 600px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
+    
     .caja-columna{
         margin:0;
     }
     .cabina{
-        width: 250px;
-        height: 250px;
+        width: 150px;
+        height: 150px;
     }
     .contenido{
         font-size: .7rem;
@@ -26,7 +32,6 @@
         width: 50px;
         height: 50px;
     }
-
     .titulo{
         font-size: 1.2rem;
     }
@@ -81,8 +86,8 @@
         position: relative;
     }
     .logo{
-        widows: 200px;
-        height: 80px;
+        width: 130px;
+        height: 85px;
     }
     .iniciar{
         padding-left: 2%;
@@ -122,12 +127,21 @@
         font-size: 1rem;
     }
     .somos{
-        width:90px;
-        height: 70px;
+        top:50px;
+        margin: 0;
+        width:50px;
+        height: 40px;
     }
     .bt{
-        width: 70px;
-        height: 70px;
+        width: 40px;
+        height: 40px;
+    }
+    .caja-cabihack{
+        padding: 0;
+        margin: 0;
+    }
+    .cohete2{
+        width: 40px;
     }
     /*-----------------filas----------------------*/
     .texto-cambia:before{
@@ -139,6 +153,8 @@
     .tercera-fila{
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        
     }
     .tercera-fila .contenedor2,.caja-cabina{
         width: 100%;
@@ -146,16 +162,14 @@
     .caja-texto{
         width: 70%;
     }
-    .caja-cabina{
-        margin-top: 20%;
-    }
     .caja-columna{
         margin-bottom: 5%;
     }
-    .primera-fila, .segundada-fila, .tercera-fila, .caja-somos, .bt-caja{
-        margin-top: 20%;
-        margin-bottom: 20%;
+    .caja-somos, .bt-caja{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
+    
     .aprendizaje{
         position: relative;
     }
@@ -196,9 +210,10 @@
     /*----------------------------------------------*/
     .caja-texto  p{
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .cabihack{
+        margin: 0;
         font-size: 1rem;
     }
     .columnas{
@@ -276,6 +291,7 @@
         width: 60%;
     }
     /*----------------------------footer------------------------------*/
+    /*
     .cuarta-fila{
         margin-bottom: 0;
     }
@@ -298,6 +314,7 @@
     .caja-secciones{
         font-size: 1rem;
     }
+    */
     /*--------------------------bannersssss------------------------------------*/
     .banner-pantalla{
         display: none;

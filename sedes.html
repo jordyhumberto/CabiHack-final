@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="css/social.css">
 
     <link rel="stylesheet" href="css/sedes.css">
+<!--
     <link rel="stylesheet" href="css/sedes2.css">
+-->
     <link rel="stylesheet" href="css/footer.css">
   </head>
   <body>
@@ -27,18 +29,20 @@
         <button>IMapa</button>
       </section>
       <section class="contenido" id="contenido">
-        <ul class="contenido__lista" id="contenido__lista">
-          <li class="tituloLista" id="tituloLista"><span>{</span>
-            <p>Direcciones</p><span>}</span>
-          </li>
-          <li>Carabayllo</li>
-          <li>Los Olivos</li>
-          <li>Santa Rosa</li>
-          <li>Puente Piedra</li>
-          <li>Ventanilla</li>
-        </ul>
-        <div class="contenido__mapa" id="contenido__mapa">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.3958164819574!2d-77.07901368563688!3d-11.947073991533737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDU2JzQ5LjUiUyA3N8KwMDQnMzYuNiJX!5e0!3m2!1ses-419!2spe!4v1515358880805" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen></iframe>
+        <div class="sedes_prueba">
+            <ul class="contenido__lista" id="contenido__lista">
+                <li class="tituloLista" id="tituloLista"><span>{</span>
+                    <p>Direcciones</p><span>}</span>
+                </li>
+                <li>Carabayllo</li>
+                <li>Los Olivos</li>
+                <li>Santa Rosa</li>
+                <li>Puente Piedra</li>
+                <li>Ventanilla</li>
+            </ul>
+            <div class="contenido__mapa" id="contenido__mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.3958164819574!2d-77.07901368563688!3d-11.947073991533737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDU2JzQ5LjUiUyA3N8KwMDQnMzYuNiJX!5e0!3m2!1ses-419!2spe!4v1515358880805" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen></iframe>
+            </div>
         </div>
         <div class="contenido__detalle" id="contenido__detalle">
           <div class="contenido__detalle__header" id="contenido__detalle__header">
@@ -55,7 +59,45 @@
         </div>
       </section>
     </main>
-    <script src="footer.js"></script>
+
+    <footer>
+        <div class="footer_prueba_filas">
+            <div class="footer_prueba_primera">
+                <p>About</p>
+                <ul>
+                    <li>Somos</li>
+                    <li>Talleres</li>
+                    <li>Developers</li>
+                    <li>Sedes</li>
+                    <li>Contacto</li>
+                </ul>
+            </div>
+            <div class="footer_prueba_segunda">
+                <p>Suscribete a nuestros eventos</p>
+                <form action="" method="post">
+                    <input  class="footer_email" type="email" name="footer_email" id="footer_email" placeholder="Enter Email Addres">
+                    <input class="footer_boton" type="button" id="footer_boton"value="suscribete">
+                </form>
+            </div>
+            <div class="footer_prueba_tercera">
+                <p>Conectate con nosotros</p>
+                <div class='footer_caja_iconos'>
+                    <i class='fa fa-facebook-square' aria-hidden='true'></i>
+                    <i class='fa fa-twitter-square' aria-hidden='true'></i> 
+                    <i class='fa fa-google-plus-square' aria-hidden='true'></i> 
+                    <i class='fa fa-pinterest-square' aria-hidden='true'></i> 
+                    <i class='fa fa-instagram' aria-hidden='true'></i> 
+                    <i class='fa fa-vimeo-square' aria-hidden='true'></i> 
+                    <i class='fa fa-youtube-play' aria-hidden='true'></i> 
+                </div>
+            </div>
+        </div>
+        <div class="footer_prueba_pie">
+                <p><i class='fa fa-copyright' aria-hidden='true'></i>CabiHack 2018</p>
+                <p>Terminos de uso</p>
+                <p>Politicas de Privacidad</p>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script>
         $(document).ready(function () {
