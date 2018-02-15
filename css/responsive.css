@@ -290,31 +290,7 @@
     .desarrollador{
         width: 60%;
     }
-    /*----------------------------footer------------------------------*/
-    /*
-    .cuarta-fila{
-        margin-bottom: 0;
-    }
-    .caja-iconos{
-        font-size: 1.5rem;
-        margin: 10px 0px;
-    }
-    .conectate,.secciones{
-        font-size: 1.5rem;
-    }
-    .caja-footer2{
-        flex-wrap: wrap;
-    }
-    .caja-seguir{
-        font-size: 1rem;
-    }
-    .caja-footer2 p{
-        font-size: 1rem;
-    }
-    .caja-secciones{
-        font-size: 1rem;
-    }
-    */
+    
     /*--------------------------bannersssss------------------------------------*/
     .banner-pantalla{
         display: none;

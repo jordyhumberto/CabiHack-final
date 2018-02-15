@@ -1,49 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contacto</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/sedes.css">
-    <link rel="stylesheet" href="css/sedes2.css">
-    <link rel="stylesheet" href="css/contacto.css">
-    <link rel="stylesheet" href="css/footer.css">
-  </head>
-  <body>
+</head>
+<body>
     <script src="header.js"></script>
     <section>
         <div class="banner-pantalla"><img src="img/contacto_pc.png" alt=""></div>
         <div class="banner-celular"><img src="img/contacto_movil.png" alt=""></div>
     </section>
-
-    <form class="contacto">
-      <div class="contacto__datos">
-        <input class="contacto__datos__nombre" id="" placeholder="Nombre:" type="text">
-        <input class="contacto__datos__email" id="" placeholder="E-mail:" type="text">
-        <input class="contacto__datos__telefono" id="" placeholder="Teléfono:" type="text">
-        <input class="contacto__datos__institucion" id="" placeholder="Institución:" type="text">
-      </div>
-      <div class="contacto__mensaje">
-        <textarea class="contacto__mensaje" id="" placeholder="Mensaje:" name="" cols="30" rows="10"></textarea>
-      </div>
-      <div class="contato__contieneBoton">
-          <input type="submit" name="" value="Enviar" class="contato__contieneBoton__boton">
-      </div>
+    <form class="prueba_grid_form"action="" method="post">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre:">
+        <input type="email" name="email" id="email" placeholder="E-mail:">
+        <input type="tel" name="telefono" id="telefono" pattern="[0-9]{9}" placeholder="Teléfono:">
+        <input type="text" name="institucion" id="institucion" placeholder="Institución:">
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje:"></textarea>
+        <input type="submit" name="enviar" id="enviar" value="Enviar">
     </form>
     <footer>
             <div class="footer_prueba_filas">
                 <div class="footer_prueba_primera">
                     <p>About</p>
                     <ul>
-                        <li>Somos</li>
-                        <li>Talleres</li>
-                        <li>Developers</li>
-                        <li>Sedes</li>
-                        <li>Contacto</li>
+                        <a href="index.html"><li>Somos</li></a>
+                        <a href="talleres.html"><li>Talleres</li></a>
+                        <a href="desarrolladores.html"><li>Developers</li></a>
+                        <a href="sedes.html"><li>Sedes</li></a>
+                        <a href="contacto.html"><li>Contacto</li></a>
                     </ul>
                 </div>
                 <div class="footer_prueba_segunda">
@@ -56,13 +45,13 @@
                 <div class="footer_prueba_tercera">
                     <p>Conectate con nosotros</p>
                     <div class='footer_caja_iconos'>
-                        <i class='fa fa-facebook-square' aria-hidden='true'></i>
-                        <i class='fa fa-twitter-square' aria-hidden='true'></i> 
+                        <a href="https://www.facebook.com/cabihack/"><i class='fa fa-facebook-square' aria-hidden='true'></i></a>
+                        <a href="https://twitter.com/cabihack"><i class='fa fa-twitter-square' aria-hidden='true'></i></a>
                         <i class='fa fa-google-plus-square' aria-hidden='true'></i> 
                         <i class='fa fa-pinterest-square' aria-hidden='true'></i> 
                         <i class='fa fa-instagram' aria-hidden='true'></i> 
                         <i class='fa fa-vimeo-square' aria-hidden='true'></i> 
-                        <i class='fa fa-youtube-play' aria-hidden='true'></i> 
+                        <a href="https://www.youtube.com/channel/UC2seJHFACtW7Yi3ffPeIk2A "><i class='fa fa-youtube-play' aria-hidden='true'></i></a> 
                     </div>
                 </div>
             </div>
@@ -72,6 +61,7 @@
                     <p>Politicas de Privacidad</p>
             </div>
         </footer>
+
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script>
         $(document).ready(function () {
@@ -83,28 +73,29 @@
         });
     </script>
     <script>
-        var controladorDeLogo = false;
-            window.onscroll = function() {consideraScroll()};
-            function consideraScroll() {
-                if(window.pageYOffset>80){
-                    if(controladorDeLogo==true){
-                    }
-                    else if(controladorDeLogo==false){
-                        document.getElementsByClassName("logo")[0].classList.remove("contrae");
-                        document.getElementsByClassName("logo")[0].classList.add("expande");
-                        controladorDeLogo=true;
-                    }
+    var controladorDeLogo = false;
+        window.onscroll = function() {consideraScroll()};
+        function consideraScroll() {
+            if(window.pageYOffset>80){
+                if(controladorDeLogo==true){
                 }
-                else if(window.pageYOffset<=80){
-                    if(controladorDeLogo==true){
-                        document.getElementsByClassName("logo")[0].classList.remove("expande");
-                        document.getElementsByClassName("logo")[0].classList.add("contrae");
-                        controladorDeLogo=false;
-                    }
-                    else if(controladorDeLogo==false){
-                    }
+                else if(controladorDeLogo==false){
+                    document.getElementsByClassName("logo")[0].classList.remove("contrae");
+                    document.getElementsByClassName("logo")[0].classList.add("expande");
+                    controladorDeLogo=true;
                 }
             }
-        </script>    
-  </body>
+            else if(window.pageYOffset<=80){
+                if(controladorDeLogo==true){
+                    document.getElementsByClassName("logo")[0].classList.remove("expande");
+                    document.getElementsByClassName("logo")[0].classList.add("contrae");
+                    controladorDeLogo=false;
+                }
+                else if(controladorDeLogo==false){
+                }
+            }
+        }
+        </script>
+    
+</body>
 </html>
