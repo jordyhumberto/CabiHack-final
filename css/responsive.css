@@ -170,6 +170,7 @@
         margin-bottom: 2rem;
     }
     
+    /*
     .aprendizaje{
         position: relative;
     }
@@ -185,8 +186,11 @@
     .aprendizaje p{
         position: relative;
     }
+    */
+    
     /*---------------tamaño de textos--------------------*/
     /*-----------------texto primera fila---------------*/
+    /*
     .aprendizaje p{
         text-align: center;
     }
@@ -207,6 +211,7 @@
         margin: auto;
         font-size: 0.8rem;
     }
+    */
     /*----------------------------------------------*/
     .caja-texto  p{
         text-align: center;
