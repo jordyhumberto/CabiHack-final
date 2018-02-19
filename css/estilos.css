@@ -477,17 +477,42 @@ footer{
 ----------------------------------------------------------------------*/
 .caja_desarrolladores_prueba{
     background: white;
-    padding: 2rem 8rem;
+    padding: 4rem 8rem;
+    padding-top: 2rem;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 1rem;
+    grid-template-rows: 3.5rem auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+}
+.caja_desarrolladores_prueba p{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 .caja_desarrolladores_prueba img{
     /*transition: content 2s ease-in-out;*/
     width: 100%;
 }
+.caja_desarrolladores_prueba_div_1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.caja_desarrolladores_prueba_div_2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.caja_desarrolladores_prueba_div_3{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
 .caja_desarrolladores_prueba_img_1:hover{
     content: url(../desarrolladores/desarrollador_1_c.png);
+    
 }
 .caja_desarrolladores_prueba_img_2:hover{
     content: url(../desarrolladores/desarrollador_2_c.png);
@@ -501,6 +526,11 @@ footer{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-gap: 1rem;
+        grid-template-rows: auto auto;
+    }
+    .caja_desarrolladores_prueba p{
+        font-size: .5rem;
+        padding: .5rem;
     }
 }
 /*--------------------------------------------------------------------
