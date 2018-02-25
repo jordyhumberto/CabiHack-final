@@ -62,7 +62,7 @@ header{
     padding-right: 20px;    
 }
 .iniciar:before{
-    content: "Iniciar Sesion";
+    content: "Iniciar sesión";
 }
 
 .li-desplegable{
@@ -84,8 +84,8 @@ section{
     position: relative;
 }
 .somos{
-    width:150px;
-    height: 110px;
+    width:130px;
+    height: 90px;
 }
 /*----------------segunda fila--------------------*/
 .segunda-fila{
@@ -118,8 +118,8 @@ section{
     position: relative;
 }
 .bt{
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
 }
 /*--------------------tercera fila----------------*/
 .tercera-fila{
@@ -205,9 +205,12 @@ section{
     }
 }
 
-/*-----------------fila-prueba------------------------*/
+/*-----------------------------------------------------------
+//////////////////////////fila-prueba/////////////////////////
+-------------------------------------------------------------*/
 .fila_prueba{
     padding: 0 5rem;
+    padding-bottom: 3rem;
     margin: 3rem;
     display: grid;
     grid-template-columns: repeat(2,80px 1fr);
