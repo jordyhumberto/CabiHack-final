@@ -882,7 +882,7 @@ footer{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6,auto);
+    grid-template-rows: repeat(7,auto);
     grid-column-gap: 8rem;
     grid-row-gap: 1rem;
 }
@@ -943,6 +943,18 @@ footer{
     padding-right: 1rem;
     font-weight: bold;
 }
+.taller_caja_prueba_boton{
+    color:white;
+    background: red;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    grid-column: 2/3;
+    grid-row: 7/8;
+    width: fit-content;
+    margin: auto;
+}
 @media screen and ( min-width: 320px) and ( max-width: 767px){
     .taller_caja_prueba{
         padding: 0 1.5rem;
@@ -1000,5 +1012,9 @@ footer{
     }
     #taller_caja_prueba_i_0{
         padding-right: .5rem;
+    }
+    .taller_caja_prueba_boton{
+        grid-column: 1/2;
+        grid-row: 9/10;
     }
 }
